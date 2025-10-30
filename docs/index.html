@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Install MyApp</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Install TestSigningApp</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 60px 20px;
+    }
+    h1 {
+      font-size: 1.6em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    a.install-button {
+      display: inline-block;
+      background-color: #007aff;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 30px;
+      border-radius: 10px;
+      font-size: 1.1em;
+      transition: background-color 0.2s;
+    }
+    a.install-button:hover {
+      background-color: #005fc0;
+    }
+  </style>
 </head>
-<body style="text-align:center; font-family:sans-serif; margin-top:50px;">
-  <h1>Install MyApp</h1>
-  <p>Tap below to install on iPhone:</p>
-  <a href="itms-services://?action=download-manifest&url=https://github.com/anubhav-saxena-mobile/myapp-distribution/blob/main/docs/manifest.plist"
-     style="background:#007aff;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;">
-    Install MyApp
+<body>
+  <h1>Install TestSigningApp</h1>
+  <p>Tap the button below to install the iOS app on your device:</p>
+  <a class="install-button"
+     href="itms-services://?action=download-manifest&url=https://anubhav-saxena-mobile.github.io/myapp-distribution/manifest.plist">
+     Install App
   </a>
+  <p style="margin-top:30px; color:#777; font-size:0.9em;">
+    Make sure you're opening this page in Safari on your iOS device.
+  </p>
 </body>
 </html>
